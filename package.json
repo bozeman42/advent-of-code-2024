@@ -1,0 +1,7 @@
+{
+  "name": "advent-of-code-2024",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Aaron Kvarnlov-Leverty <bozeman42@gmail.com>",
+  "license": "MIT"
+}
