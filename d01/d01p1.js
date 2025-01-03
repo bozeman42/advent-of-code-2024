@@ -26,7 +26,6 @@ console.time('part1')
 data.left = data.left.sort((a, b) => a - b)
 data.right = data.right.sort((a, b) => a - b)
 
-
 let total = 0
 for (let i = 0; i < data.left.length; i++) {
   total += Math.abs(data.left[i] - data.right[i])
@@ -35,7 +34,7 @@ console.log(total)
 console.timeEnd('part1')
 console.time('part2')
 data.multiples = data.left.reduce((multiples, item) => {
-  if (multiples[item]) return multiples
+  if (multiples[item] !== undefined) return multiples
   multiples[item] = data.right.filter(rightData => rightData === item).length
   return multiples
 }, {})
